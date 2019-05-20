@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
+from Chatbot import settings
 from Chatapp.views import index_view,chat_view
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     url(r'^$',index_view,name='index'),
     url(r'chat/$',chat_view,name='chat'),
 ]
