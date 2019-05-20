@@ -60,7 +60,7 @@ MIDDLEWARE = [
 
 MIDDLEWARE_CLASSES =(
 'corsheaders.middleware.CorsMiddleware',
-    ''
+'whitenoise.middleware.WhiteNoiseMiddleware',
 )
 
 ROOT_URLCONF = 'Chatbot.urls'
@@ -146,4 +146,5 @@ STATICFILES_DIRS = (
 
 )
 '''
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 django_heroku.settings(locals())
