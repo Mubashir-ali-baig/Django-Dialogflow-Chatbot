@@ -14,7 +14,6 @@ def convert(data):
     if isinstance(data, tuple):
         return map(convert,data)
     return data
-
 @require_http_methods(['GET'])
 def index_view(request):
     return render(request,'app.html')
