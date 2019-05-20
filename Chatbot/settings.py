@@ -22,7 +22,7 @@ SECRET_KEY = 'r84!n(ap)&-=k-jbs31pmc4e@54+bz56=vynkcn%l@5e%ak!&k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1' ]
+ALLOWED_HOSTS = ['localhost','127.0.0.1','trivago-chatbot.herokuapp.com' ]
 
 DIALOGFLOW={
     'client_access_token': 'a5cc03d188a0420a8173706052681f97'
